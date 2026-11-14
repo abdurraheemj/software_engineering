@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>CSS Example</title>
+    <style>
+        .container{
+            display:flex;
+
+        }
+         .photo {
+            position: relative;
+            padding-top: 12px;
+            width: 100%;
+            height: auto;
+        }
+        .photo::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 369px;
+                height: 12px;
+                background: linear-gradient(
+                    to right,
+                    #a9ddd5,
+                    #d1e6db,
+                    #8ecfc4,
+                    #c6e2d8
+    );
+}
+        .h1 {
+            color: white;
+            position: absolute;
+            bottom: 0px;
+            padding: 40px;
+            font-size: 36px;
+            font-family: sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="photo">
+        <img src="Mountain_Image.jpeg" alt="Mountain landscape">
+        <h1 class="h1">Mountain Holiday</h1>
+    </div>
+</div>
+   
+</body>
+</html>
